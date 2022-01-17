@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="all"/>
+        <title>Oscilloscope</title>
+        <meta charset="UTF-8">
+    <body>
+        <h2>GUI App User Guide</h2>
+        <img src="../imgs/oscope.png" alt="GUI" style="width: 450px;height: 550px;">
+ 
+        <h3>Chapter 1: Introduction</h3>
+        <div>
+        <h4>1.0 General Device Specifications:</h4>
+        <div>
+            <ul>
+                <li>Input Voltage: +/-3.5V</li>
+                <li>Bandwith: 20MHz</li>
+                <li>Resolution: 12 bits</li>
+                <li>Usb 1.1</li>
+            </ul>
+        </div>
+        
+        <h4>1.1 Set Up</h4>
+        <div>
+            <p>Connect the device to the PC using the included usb cable and launch the application. 
+                If you launch the application without the device connected, an error message will appear asking you to connect the device.</p>
+        </div>
+
+
+        <h4>1.2 Boot Up</h4>
+        <div>
+            <p>The program will start with all parameters set to zero. The application will not be recording
+                any voltages on initial boot up.
+            </p>
+            <p>To begin reading voltages press the start button. At this point the LCD
+                screen will begin displaying incoming voltages.
+            </p>
+        </div>
+        </div>
+
+        <h3>Chapter 2: Controls</h3>
+        <div>
+         <h4>2.0 Waveform Display</h4>
+         <div>
+         <p>Once the application has been set to read incoming voltages, a trigger level can be set
+             and a trigger function selected to begin the waveform display.
+         </p>
+        </div>
+
+        <h4>2.1 Trigger level</h4>
+         <div>
+             <p>
+                Before selecting a trigger function, it is best to set a trigger level.
+                The trigger level can be set using the spin box labeled "Trigger".
+             </p>
+             <p>The high state of the waveform will be the portion of the waveform above
+                 the set trigger level, and the low state will be the portion of the waveform 
+                 below the set trigger level. The max allowable trigger level value is 99.99V.
+             </p>
+             <p>Once a trigger level has been set, it will be visible as a red line set at 
+                 the trigger level selected. </p>
+         </div>
+
+
+         <h4>2.2 Trigger Functions</h4>
+         <div>
+         <p>To display the waveform there are 3 trigger function options;</p>
+         <ul>
+             <li>Continuous - Application will begin continuously graphing incoming data. Graphing will not stop
+                 until stop button is pressed or different trigger function is selected.
+             </li>
+             <li>Falling Edge - Waveform capture will occur once the signal transitions from
+                 the high state to the low state.
+             </li>
+             <li>
+                 Rising Edge - Waveform capture will occur once the signal transitions from the low state to the high state.
+             </li>
+         </ul>
+         </div>
+
+         <h4>2.3 Scaling</h4>
+         <div>
+             <p>By default, the x-axis is set with a scaling of 8 seconds, and the y-axis is 
+                 set with a scaling of 5V.
+             </p>
+             <p>When setting the scaling for the x-axis, there is an internal multiplier
+                 of 10 to account for the spin box having a max allowable value of 99.99.
+             </p>
+         </div>
+
+         <h4>2.4 Mouse Zoom & Drag</h4>
+         <div>
+             <p>
+                To enable zoom and drag mouse features, waveform capture must be paused
+                using the stop button. Once waveform capture is suspended, right-click to drag and
+                zoom using the mouse's scroll wheel will be enabled.
+             </p>
+             <p>
+                 Once waveform capture is resumed, mouse features will again be disabled,
+                 and graph will reset to either default or user set x/y scaling.
+             </p>
+         </div>
+         
+        </div>
+
+    </body>
+</html>
+
+ 
