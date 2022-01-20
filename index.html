@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
     <body>
         <h2>GUI App User Guide</h2>
-        <img src="/doc/imgs/oscope.png" alt="GUI" style="width: 450px;height: 550px;">
+        <img src="../doc/imgs/oscope.png" alt="GUI" style="width: 450px;height: 550px;">
  
         <h3>Chapter 1: Introduction</h3>
         <div>
@@ -54,10 +54,11 @@
              </p>
              <p>The high state of the waveform will be the portion of the waveform above
                  the set trigger level, and the low state will be the portion of the waveform 
-                 below the set trigger level. The max allowable trigger level value is 99.99V.
+                 below the set trigger level. 
              </p>
-             <p>Once a trigger level has been set, it will be visible as a red line set at 
-                 the trigger level selected. </p>
+             <p>Once a trigger level has been set, it will be visible as a red line on the graph. </p>
+
+            <p>Note that the max allowable trigger level spinbox value is 99.99.</p>
          </div>
 
 
@@ -65,8 +66,7 @@
          <div>
          <p>To display the waveform there are 3 trigger function options;</p>
          <ul>
-             <li>Continuous - Application will begin continuously graphing incoming data. Graphing will not stop
-                 until stop button is pressed or different trigger function is selected.
+             <li>Continuous - Application will begin continuously graphing data as it is received. 
              </li>
              <li>Falling Edge - Waveform capture will occur once the signal transitions from
                  the high state to the low state.
@@ -79,11 +79,11 @@
 
          <h4>2.3 Scaling</h4>
          <div>
-             <p>By default, the x-axis is set with a scaling of 8 seconds, and the y-axis is 
-                 set with a scaling of 5V.
+             <p>By default, the x-axis is set with a scaling of 8 seconds per unit, and the y-axis is 
+                 set with a scaling of 5V per unit.
              </p>
              <p>When setting the scaling for the x-axis, there is an internal multiplier
-                 of 10 to account for the spin box having a max allowable value of 99.99.
+                 of 10, to account for the spin box having a max allowable value of 99.99.
              </p>
          </div>
 
