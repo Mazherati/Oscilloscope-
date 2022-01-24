@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="/doc/styles.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/doc/styles.css" rel="stylesheet" />
         <title>Oscilloscope</title>
         <meta charset="UTF-8">
     <body>
-        <h2>GUI App User Guide</h2>
-        <img src="../doc/imgs/oscope.png" alt="GUI" style="width: 450px;height: 550px;">
+        <h2 class="page_title">GUI App User Guide</h2>
+        <img class="pic1" src="../doc/imgs/oscope.png" alt="GUI" style="width: 450px;height: 550px;">
  
-        <h3>Chapter 1: Introduction</h3>
+        <h3 class="ch_title">Chapter 1: Introduction</h3>
         <div>
-        <h4>1.0 General Device Specifications:</h4>
+        <h4 class="section_title">1.0 General Device Specifications:</h4>
         <div>
+            <fieldset class="bullets">
             <ul>
                 <li>Input Voltage: +/-3.5V</li>
                 <li>Bandwith: 20MHz</li>
                 <li>Resolution: 12 bits</li>
                 <li>Usb 1.1</li>
             </ul>
+            </fieldset>
         </div>
         
-        <h4>1.1 Set Up</h4>
+        <h4 class="section_title">1.1 Set Up</h4>
         <div>
-            <p>Connect the device to the PC using the included usb cable and launch the application. </p>
-            <p>If the application is launched without the device connected, an error message will appear asking you to connect the device.</p>
+            <p class="section_info">Connect the device to the PC using the included usb cable and launch the application. </p>
+            <p class="section_info">If the application is launched without the device connected, an error message will appear asking you to connect the device.</p>
         </div>
 
 
-        <h4>1.2 Boot Up</h4>
+        <h4 class="section_title">1.2 Boot Up</h4>
         <div>
-            <p>The program will start with all parameters set to zero. The application will not be recording
+            <p class="section_info">The program will start with all parameters set to zero. The application will not be recording
                 any voltages on initial boot up.
             </p>
-            <p>To begin reading voltages press the start button. At this point the LCD
+            <p class="section_info"> To begin reading voltages press the start button. At this point the LCD
                 screen will begin displaying incoming voltages.
             </p>
         </div>
         </div>
 
-        <h3>Chapter 2: Controls</h3>
+        <h3 class="ch_title">Chapter 2: Controls</h3>
         <div>
-         <h4>2.0 Waveform Display</h4>
+         <h4 class="section_title">2.0 Waveform Display</h4>
          <div>
-         <p>Once the application has been set to read incoming voltages a trigger function and level must still be set to begin the waveform display.
+         <p class="section_info">Once the application has been set to read incoming voltages a trigger function and level must still be set to begin the waveform display.
          </p>
         </div>
 
-        <h4>2.1 Trigger level</h4>
+        <h4 class="section_title">2.1 Trigger level</h4>
          <div>
-             <p>
+             <p class="section_info">
                 Before selecting a trigger function, it is best to set a trigger level.
                 The trigger level can be set using the spin box labeled "Trigger".
              </p>
-             <p>The high state of the waveform will be the portion of the waveform above
+             <p class="section_info">The high state of the waveform will be the portion of the waveform above
                  the set trigger level, and the low state will be the portion of the waveform 
                  below the set trigger level. 
              </p>
-             <p>Once a trigger level has been set, it will be visible as a red line on the graph. </p>
+             <p class="section_info">Once a trigger level has been set, it will be visible as a red line on the graph. </p>
 
-            <p>Note that the max allowable trigger level spinbox value is 99.99.</p>
+            <p class="section_info">Note that the max allowable trigger level spinbox value is 99.99.</p>
          </div>
 
 
-         <h4>2.2 Trigger Functions</h4>
+         <h4 class="section_title">2.2 Trigger Functions</h4>
          <div>
-         <p>To display the waveform there are 3 trigger function options;</p>
+         <p class="section_info">To display the waveform there are 3 trigger function options;</p>
+         <fieldset class="bullets">
          <ul>
              <li>Continuous - Application will begin continuously graphing data as it is received. 
              </li>
@@ -75,26 +78,27 @@
                  Rising Edge - Waveform capture will occur once the signal transitions from the low state to the high state.
              </li>
          </ul>
+        </fieldset>
          </div>
 
-         <h4>2.3 Scaling</h4>
+         <h4 class="section_title">2.3 Scaling</h4>
          <div>
-             <p>By default, the x-axis is set with a scaling of 8 seconds per unit, and the y-axis is 
+             <p class="section_info">By default, the x-axis is set with a scaling of 8 seconds per unit, and the y-axis is 
                  set with a scaling of 5V per unit.
              </p>
-             <p>When setting the scaling for the x-axis, there is an internal multiplier
+             <p class="section_info">When setting the scaling for the x-axis, there is an internal multiplier
                  of 10, to account for the spin box having a max allowable value of 99.99.
              </p>
          </div>
 
-         <h4>2.4 Mouse Zoom & Drag</h4>
+         <h4 class="section_title">2.4 Mouse Zoom & Drag</h4>
          <div>
-             <p>
+             <p class="section_info">
                 To enable zoom and drag mouse features, waveform capture must be paused
                 using the stop button. Once waveform capture is suspended, right-click to drag and
                 zoom using the mouse's scroll wheel will be enabled.
              </p>
-             <p>
+             <p class="section_info">
                  Once waveform capture is resumed, mouse features will again be disabled,
                  and graph will reset to either default or user set x/y scaling.
              </p>
