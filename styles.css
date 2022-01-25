@@ -12,8 +12,8 @@
 
 .page_title{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(155, 105, 109);
-    color: rgb(73, 22, 19);
+    background-color: rgb(199, 163, 223);
+    color: rgb(185, 61, 113);
     font-size: 45px;
     text-align: center;
     margin-top: 0;
@@ -23,7 +23,7 @@
 .ch_title{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 5px;
-    background-color: rgb(199, 106, 114);
+    background-color: rgb(199, 163, 223);
     color: rgb(107, 54, 52);
     margin: 0;
     margin-top: 55px;
@@ -35,7 +35,7 @@
     padding: 5px;
     margin:0;
     margin-top: 25px;
-    background-color: rgb(245, 220, 222);
+    background-color: rgb(199, 163, 223);
     color: rgb(107, 54, 52);
     font-size: 20px;
 
